@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, intital scale=1.0">
+	<title>Travel Quiz</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body class="quiz">
+	<h1>Travel Quiz</h1>
+	
+	<form id="quiz" name="quiz">
+		<!--QUESTION 1-->
+		<p>Which sounds like the best day to you?:</p>
+		<input type="radio" name="activity" value="beach"><label>Sipping a pina colada on a beach</label><br>
+		<input type="radio" name="activity" value="mountains"><label>Hiking in the mountains</label><br>  
+		<input type="radio" name="activity" value="castle"><label>Taking a tour of a castle</label><br>  
+		<input type="radio" name="activity" value="islands"><label>Island hopping on a yacht</label>
+
+		<!--QUESTION 2-->
+		<p>Which would you rather do at night?:</p>
+		<input type="radio" name="nightlife" value="pub"><label>Have a couple beers with friends at a pub</label><br>
+		<input type="radio" name="nightlife" value="club"><label>Dance and drink cocktails at a fancy club</label><br>
+		  
+	    <!--QUESTION 3-->
+		<p>What would you rather eat right now?:</p>
+		<input type="radio" name="food" value="cheese"><label>A Plate of Assorted Cheeses</label><br>
+		<input type="radio" name="food" value="chicken"><label>Chicken Pot Pie</label><br>
+		<input type="radio" name="food" value="pierogi"><label>Pierogi Filled With Potatoes and Meat</label><br>
+		<input type="radio" name="food" value="italian"><label>Spaghetti and Meatballs</label><br>
+		 
+	    <!--QUESTION 4-->
+		<p>Which thing would you most like to see?:</p>
+		<input type="radio" name="sites" value="architecture"><label>Beautiful buildings or architecture</label><br>
+		<input type="radio" name="sites" value="cliffs"><label>Dramatic cliffs and beaches</label><br>
+		<input type="radio" name="sites" value="ruins"><label>Ancient ruins</label><br>
+		<input type="radio" name="sites" value="mountains"><label>Majestic mountains and lakes</label><br>
+		  
+		<!--javascript/jquery doesn't work on input button-->
+		<p id="button">Submit</p>
+	</form>
+	
+	<!--JS will put result into span here-->
+	<div class="results">
+		<p>Congrats! You finished the quiz.</p>
+		<p class="temp-result">Your Country of Choice is: <br><span id="result"></span></p>
+	</div>
+	
+	<!--SCRIPTS-->
+	<!--jquery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!--javascript-->
+	<script type="text/javascript" src="script.js"></script>
+	
+	<!--
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<!--jquery-->
+	<!--
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="potato.js" defer></script> <!--what's defer??-->
+	<!--
+	<script src="script.js"></script> -->
+</body>
+</html>
