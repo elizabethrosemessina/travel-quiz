@@ -4,10 +4,16 @@
 /*
    Country Options:
       Italy
-	  Ireland
-	  Switzerland
-	  Croatia
-	  Poland
+      Ireland
+      Switzerland
+      Croatia
+      Poland
+      
+   Using console.log() along the way to test results using developer tools. Ignore.
+   Each country has ratings for each answer. For example, Italy and Croatia have a rating of 4
+   	for the answer related to beaches while Switzerland gets a rating of 0, since it does
+	not have good beaches. Whichever country has the highest count after all the questions
+	have been answered, that is the result, and the country the user should visit!
 */
 
 $(document).ready(function () {
