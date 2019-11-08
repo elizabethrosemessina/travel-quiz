@@ -3,7 +3,7 @@
 #### By: Elizabeth Messina
 #### Last Edited: May 2019
 -------------------------------
-Tools:
+Languages/Tools:
  - HTML / SCSS
  - JavaScript / jQuery
  - Node.js
