@@ -2,6 +2,11 @@
 
 // PROJECT NOTES:
 /*
+   Elizabeth Messina
+   May 2019
+
+   A travel quiz with 4 questions
+   
    Country Options:
       Italy
       Ireland
@@ -10,10 +15,10 @@
       Poland
       
    Using console.log() along the way to test results using developer tools. Ignore.
-   Each country has ratings for each answer. For example, Italy and Croatia have a rating of 4
-   	for the answer related to beaches while Switzerland gets a rating of 0, since it does
-	not have good beaches. Whichever country has the highest count after all the questions
-	have been answered, that is the result, and the country the user should visit!
+   Each country receives a specific rating, or has a number added to its total value for each answer.
+   For example, Italy and Croatia's total values are increased by 4 if the user chooses the beach
+   	for question #1, while Switzerland's value stays the same, since it doesn't have notable beaches.
+	After all the questions have been answered, whichever country has the highest value is the final result.
 */
 
 $(document).ready(function () {
@@ -27,9 +32,7 @@ $(document).ready(function () {
 		var italy = 0, ireland = 0, switzerland = 0, croatia = 0, poland = 0, greatest = 0;
 		var result = "Italy";  // name of country w/ greatest value
 		
-		console.log("hello!");
 		
-		//
 		// QUESTION 1
 		if (question1 === "beach") {
 			console.log("beach");
@@ -55,7 +58,6 @@ $(document).ready(function () {
 		}
 		
 		
-		//
 		// QUESTION 2
 		if (question2 === "pub") {
 			console.log("pub");
@@ -69,7 +71,6 @@ $(document).ready(function () {
 		}
 		
 		
-		//
 		// QUESTION 3
 		if (question3 === "cheese") {
 			console.log("cheese");
@@ -95,7 +96,6 @@ $(document).ready(function () {
 		}
 		
 		
-		//
 		// QUESTION 4
 		if (question4 === "architecture") {
 			console.log("architecture");
@@ -148,8 +148,10 @@ $(document).ready(function () {
 		else
 			result = "Italy";
 		
+		
 		$('#result').text(result);
 		
+		//
 		$('.results').css({
 			'display': 'block'
 		})
